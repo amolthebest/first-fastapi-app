@@ -1,11 +1,11 @@
-from typing import any
+from typing import Any
 from sqlalchemy.ext.declarative import declared_attr
 from sqlalchemy.orm import as_declarative
 
-@as_declarative
+@as_declarative()
 class Base:
 
-    id: any
+    id: Any
     __name__: str
 
     @declared_attr
